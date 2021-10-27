@@ -36,22 +36,3 @@ User3 "linda", Pass: mimor,
 //}
 
 /* console.log("Despues del IF"); */
-
-const number = 15;
-
-switch (number) {
-    case 0:
-        console.log("Numero es 0");
-        break;
-    case 5:
-        console.log("Numero es 5");
-        break;
-    case 15:
-        console.log("Numero es 15");
-        break;
-    case 20:
-        console.log("Numero es 20");
-        break;
-    default:
-        break;
-}
