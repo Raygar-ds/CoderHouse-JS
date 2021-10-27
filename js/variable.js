@@ -1,4 +1,4 @@
-console.log("Hola, este es mi documento de variable.js")
+/* console.log("Hola, este es mi documento de variable.js")
 
 // ACA VOY ARMAR MI VARIABLE EN JS, LA IDEA ES AVERIGUAR LA EDAD DEL USUARIO
 
@@ -37,4 +37,4 @@ alert("Hmmm aca algo salio mal en los calculos, esa no puede ser tu edad. Vuelvo
 const edadCorrecta = Number(añoActual) - Number(añoNacimiento);
 
 alert("Ahi encontre el error, perdón por la demora!");
-alert("Tu edad es " + edadCorrecta + " :D");
+alert("Tu edad es " + edadCorrecta + " :D"); */
