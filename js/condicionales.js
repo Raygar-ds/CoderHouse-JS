@@ -1,10 +1,12 @@
 
 /* ACA ARRANCA MI TRABAJO DE CONDICIONALES */
 
+// Hola tutor Miguel, en el siguiente script el objetivo es verificar que el usuario sea mayor de edad
+// Opte por registrarse o utilizar una cuenta existente. Tambien lo prepare para rechazar a usuario menor de edad y termine el script.
+
 alert("Bienvenido a Coder practice House de Diego!");
 
 const edadUser = Number(prompt("Para poder avanzar necesitamos verificar tu edad, solo aquellas personas mayores a 18 puede proseguir! Coloque su edad:"));
-var usuario = "";
 if (edadUser >= 18) {
     alert("Bienvenido!")
 } else if (edadUser < 18) {
