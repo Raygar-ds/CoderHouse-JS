@@ -79,3 +79,19 @@ do {
 
 } while (userNumber !== magicNumber && intentos > 0)
  */
+
+let nombre = "ANA";
+switch(nombre) {
+    case "ALBERTO":
+        console.log("HOLA ALBERTO");
+        break;
+    case "JUAN":
+        console.log("HOLA JUAN");
+        break;
+    case "EVA":
+        console.log("HOLA EVA");
+        break;
+    default:
+        console.log("HOLA ANA");
+        break;
+}
