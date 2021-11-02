@@ -1,97 +1,82 @@
-/* Ciclo FOR */
 
-/* const numero = Number(prompt("Que tabla querés saber"));
+//                                                        _...--.
+//                                        _____......----'     .'
+//                                  _..-''                   .'
+//                                .'                       ./
+//                        _.--._.'                       .' |
+//                     .-'                           .-.'  /
+//                   .'   _.-.                     .  \   '
+//                 .'  .'   .'    _    .-.        / `./  :
+//               .'  .'   .'  .--' `.  |  \  |`. |     .'
+//            _.'  .'   .' `.'       `-'   \ / |.'   .'
+//         _.'  .-'   .'     `-.            `      .'
+//       .'   .'    .'          `-.._ _ _ _ .-.    :
+//      /    /o _.-'     ______    .--'   .'   \   |
+//    .'-.__..-'        | 82  |   /..    .`    / .'
+//  .'   . '            ------    /.'/.'     /  |
+// `---'                                  _.'   '
+//                                      /.'    .'
+//                                       /.'/.'
 
-for ( let i = 0; i <= 10; i += 1 ) {
-    //console.log('7x' + i + ' = ' + 7*i);
-    console.log(`${numero}x${i} = ${numero * i}`);
-} */
+//INTRUSO ALERT! QUACK!!!
 
-/* const magicNumber = 57;
+/* Aca inicia mi trabajo de CICLOS */
 
-for (let i = 0; i < 3; i++ ) {
+/* crear un numero random y hacer que el usuario adivine, pero van haber alertas dando pistas   */
 
-    const numeroUser = Number(prompt("Ingresa un Numero entre 0 y 100"));
+const numeroMagico = Math.floor(Math.random() * 21);
+console.log(numeroMagico);
+let userNumber = prompt(`La maquina eligio un numero entre 0 y 20
+Que numero creen que eligio?`);
 
-    if (numeroUser > 100 || numeroUser < 0) {
-        alert("El numero ingresa no esta entre 0 y 100!");
-        i--;
-        continue;
-    }
+for (i = 0; i < 5; i++) {
 
-    if (numeroUser == magicNumber){
-        alert("Felicitaciones, encontraste el número mágico");
-        break; // Cortamos la ejecución del ciclo
-    }else {
-        alert("Incorrecto, intenta otra vez");
-    }
-} */
+    if (userNumber == numeroMagico) {
+        alert(`Muy bien! El numero magico era ${numeroMagico}!`);
 
-/* for (let i = 0; i < 10; i++) {
-    if ( i % 2 == 0) {
-        continue; // Cortamos la iteración actual
-    }
-    console.log(`Numero ${i}`);
-} */
+        alert(`No fue tan dificil no?
+        vamos a subir de nivel.`)
 
-/* Ciclo WHILE */
+        const numeroGanso = 82
+        console.log("pstt, mira el codigo ;)")
+        let userGanso = prompt(`El ganso cuida de un numero, que numero es?`);
 
-/* const magicNumber = 57;
-let userNumber = Number(prompt("ingresa un numero entre 0 y 100"));
+        for (i = 0; i < 1; i++) {
+            if (userGanso == numeroGanso) {
+            alert(`Muy bien! El ganso cuidaba ${numeroGanso}!`);
+            break;
+            } else {
+                alert("El Ganso te pico :( Sera la proxima!");
+                break;
+            }
 
-while ( userNumber !== magicNumber ) {
-
-    if ( userNumber < 0 || userNumber > 100){
-        alert("El numero ingresa no esta entre 0 y 100!");
-        userNumber = Number(prompt("Ingresa un numero entre 0 y 100"));
-        continue;
-    }
-        alert("El numero ingresado es incorrecto")
-        userNumber = Number(prompt("Ingresa un numero entre 0 y 100"));
-}
-
-alert ("Felicitaciones, encontraste el número magico")
- */
-/* Ciclo DO WHILE */
-
-/* const magicNumber = Math.floor(Math.random() * 100);
-console.log(magicNumber)
-let userNumber;
-let intentos = 5;
-
-do {
-    userNumber = Number(prompt("ingresa un numero entre 0 y 100 o una letra cualquiera para slair del juego"));
-    if ()
-    
-    if ( userNumber < 0 || userNumber > 100){
-        alert("El numero ingresa no esta entre 0 y 100!");
-        continue;
-    }
-    if (userNumber < magicNumber) {
-        alert("El numero ingresado es menor que el Magic Number");
-        intentos--;
-    } else if (userNumber > magicNumber) {
-        alert("El numero ingresado es mayor que el Magic Number");
-        intentos--;
+        }
+        break;
     } else {
-        alert("Felicitaciones, encontraste el número mágico");
+        if (userNumber > numeroMagico) {
+            alert("Tu numero es mayor al Numero Magico");
+        } else if (userNumber < numeroMagico) {
+            alert("Tu numero es menor al Numero Magico");
+        }
+        //alert(`Te quedan ${4 - i} intentos.`)
+        userNumber = prompt(`Te quedan ${4 - i} intentos. Volve a intentar!`);
     }
-
-} while (userNumber !== magicNumber && intentos > 0)
- */
-
-let nombre = "ANA";
-switch(nombre) {
-    case "ALBERTO":
-        console.log("HOLA ALBERTO");
-        break;
-    case "JUAN":
-        console.log("HOLA JUAN");
-        break;
-    case "EVA":
-        console.log("HOLA EVA");
-        break;
-    default:
-        console.log("HOLA ANA");
-        break;
 }
+
+// alert(`No fue tan dificil no?
+// vamos a subir de nivel.`)
+
+// const numeroGanso = 52
+// let intentos = 1;
+// let userGanso = prompt(`El ganso cuida de un numero, que numero es?`);
+// console.log("pstt, mira el codigo ;)")
+
+// for (i = 0; i < 1; i++) {
+//     if (userGanso == numeroGanso) {
+//         alert(`Muy bien! El ganso cuidaba ${numeroGanso}!`);
+//         break;
+//     } else {
+//         alert("Es no era el numero y el ganso te pico :( sera la proxima!");
+//         break;
+//     }
+// }
